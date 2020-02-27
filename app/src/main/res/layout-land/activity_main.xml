@@ -103,22 +103,45 @@
             android:layout_weight="1">
 
             <CheckBox
-                android:id="@+id/checkBox3"
+                android:id="@+id/checkBoxTransparency"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="CheckBox" />
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="11dp"
+                android:layout_marginTop="77dp"
+                android:text="Transparency" />
 
             <CheckBox
-                android:id="@+id/checkBox2"
+                android:id="@+id/checkBoxTint"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="CheckBox" />
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="11dp"
+                android:layout_marginTop="178dp"
+                android:text="Tint" />
 
             <CheckBox
-                android:id="@+id/checkBox"
+                android:id="@+id/checkBoxReSize"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="CheckBox" />
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="11dp"
+                android:layout_marginTop="129dp"
+                android:text="ReSize" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="241dp"
+                android:layout_marginEnd="86dp"
+                android:layout_marginBottom="80dp"
+                app:srcCompat="@mipmap/ic_launcher_round" />
         </RelativeLayout>
 
         <RelativeLayout
@@ -126,6 +149,25 @@
             android:layout_height="match_parent"
             android:layout_weight="1">
 
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="233dp"
+                android:layout_marginEnd="96dp"
+                android:text="TextView" />
+
+            <Switch
+                android:id="@+id/switch1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="37dp"
+                android:layout_marginTop="94dp"
+                android:text="Switch" />
         </RelativeLayout>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
