@@ -46,7 +46,7 @@
                     android:id="@+id/radioButtonBejiring"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Bejiring" />
+                    android:text="Beijing" />
 
                 <RadioButton
                     android:id="@+id/radioButtonEE"
@@ -83,18 +83,19 @@
                 android:layout_marginStart="82dp"
                 android:layout_marginLeft="82dp"
                 android:layout_marginTop="28dp"
-                android:text="Button" />
+                android:text="Capture" />
 
             <TextClock
                 android:id="@+id/Time"
                 android:layout_width="82dp"
                 android:layout_height="36dp"
+                android:layout_below="@+id/button"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentLeft="true"
-                android:layout_alignParentBottom="true"
                 android:layout_marginStart="88dp"
                 android:layout_marginLeft="88dp"
-                android:layout_marginBottom="38dp" />
+                android:layout_marginTop="17dp"
+                android:clickable="true" />
 
         </RelativeLayout>
 
