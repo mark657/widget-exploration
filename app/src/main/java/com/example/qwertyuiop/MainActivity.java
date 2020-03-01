@@ -4,14 +4,17 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.graphics.Color;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Switch;
 import android.widget.TextClock;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -28,6 +31,8 @@ public class MainActivity extends AppCompatActivity {
 
         final Button button = (Button) findViewById(R.id.button);
 
+        final EditText editText = (EditText) findViewById(R.id.editText);
+
         final TextClock textClock = (TextClock) findViewById(R.id.time);
 
         final CheckBox checkBoxTransparency = (CheckBox) findViewById(R.id.checkBoxTransparency);
@@ -37,6 +42,8 @@ public class MainActivity extends AppCompatActivity {
         final Switch switch1 = (Switch) findViewById(R.id.switch1);
 
         final ImageView imageView = (ImageView) findViewById(R.id.imageView);
+
+        final TextView textView = (TextView) findViewById(R.id.editText);
 
         // дальше самостоятельно
 
@@ -96,6 +103,13 @@ public class MainActivity extends AppCompatActivity {
                         textClock.setTimeZone("Europe/Brussels");
                         break;
                 }
+            }
+        });
+
+        button.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view) {
+               textView.setText((CharSequence) editText);
             }
         });
     }
