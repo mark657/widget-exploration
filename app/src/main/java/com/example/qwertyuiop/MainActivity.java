@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
 
         final ImageView imageView = (ImageView) findViewById(R.id.imageView);
 
-        final TextView textView = (TextView) findViewById(R.id.editText);
+        final TextView textView = (TextView) findViewById(R.id.textView);
 
         // дальше самостоятельно
 
@@ -54,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
                     imageView.setAlpha(.1f);
                 }
                 else {
-                    imageView.setAlpha(.1f);
+                    imageView.setAlpha(1f);
                 }
 
             }
@@ -109,7 +109,7 @@ public class MainActivity extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
-               textView.setText((CharSequence) editText);
+               textView.setText(editText.getText().toString());
             }
         });
     }

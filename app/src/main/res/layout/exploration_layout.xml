@@ -86,7 +86,7 @@
                 android:text="Capture" />
 
             <TextClock
-                android:id="@+id/Time"
+                android:id="@+id/time"
                 android:layout_width="82dp"
                 android:layout_height="36dp"
                 android:layout_below="@+id/button"
